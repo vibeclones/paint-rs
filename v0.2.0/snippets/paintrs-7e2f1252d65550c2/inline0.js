@@ -1,0 +1,1 @@
+export function closeWindow() { window.close(); setTimeout(() => { if (!document.hidden) window.location.replace('about:blank'); }, 100); }
