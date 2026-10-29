@@ -8,8 +8,8 @@
          runs `wasm-opt -O3` itself after Trunk. -->
     
 <script type="module">
-import init, * as bindings from './paintrs-a0c8a6524f73b5d.js';
-const wasm = await init({ module_or_path: './paintrs-a0c8a6524f73b5d_bg.wasm' });
+import init, * as bindings from './paintrs-d740ebd27ddb63a0.js';
+const wasm = await init({ module_or_path: './paintrs-d740ebd27ddb63a0_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -72,7 +72,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
         .unsupported #unsupported { display: grid; }
         .unsupported #paintrs_canvas { display: none; }
     </style>
-<link rel="modulepreload" href="./paintrs-a0c8a6524f73b5d.js" crossorigin="anonymous"><link rel="preload" href="./paintrs-a0c8a6524f73b5d_bg.wasm.gz" as="fetch" crossorigin="anonymous"></head>
+<link rel="modulepreload" href="./paintrs-d740ebd27ddb63a0.js" crossorigin="anonymous"><link rel="preload" href="./paintrs-d740ebd27ddb63a0_bg.wasm.gz" as="fetch" crossorigin="anonymous"></head>
 <body>
 <canvas id="paintrs_canvas"></canvas>
 <p id="unsupported">paint.rs needs a newer browser: Chrome 96, Firefox 113 or Safari 16.4, or later.</p>
